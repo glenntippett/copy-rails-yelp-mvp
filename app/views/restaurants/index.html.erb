@@ -2,12 +2,12 @@
   <div class="row">
     <% @restaurants.each do |restaurant| %>
     <div class="col-md-4">
-      <div class="card my-5" style="width: 100%;">
-        <img src="https://picsum.photos/100" class="card-img-top" alt="pic">
+      <div class="card my-5 rounded" style="width: 100%;">
+        <img src="https://picsum.photos/50/50" class="card-img-top rounded-top" alt="pic">
         <div class="card-body">
           <h5 class="card-title"><%= restaurant.name %></h5>
           <p class="card-text"><%= restaurant.category.capitalize %></p>
-          <a href="#"><%= link_to 'View restaurant', restaurant_path(restaurant) %></a>
+          <a href="#"><%= link_to 'View restaurant', restaurant_path(restaurant), class: 'btn btn-primary rounded-pill' %></a>
         </div>
       </div>
     </div>
